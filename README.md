@@ -1,103 +1,90 @@
-# React TypeScript Template 🎨⚛️🛠️
+# Sunnyside Landing Page
 
-This is a React TypeScript template project designed to provide a robust starting point for building React applications. This template includes a well-structured directory layout, reusable components, and commonly used libraries and tools.
+Welcome to the Sunnyside Landing Page project! This is a frontend challenge I completed from [Frontend Mentor](https://www.frontendmentor.io/). The goal was to build a landing page using modern web development technologies. I chose to implement this project using React, Vite, and TypeScript.
 
-## Table of Contents 📚
+## Table of Contents
 
-- [Features](#features-✨)
-- [Getting Started](#getting-started-🚀)
-- [Project Structure](#project-structure-🏗️)
-- [Dependencies](#dependencies-📦)
-- [Usage](#usage-🔧)
-- [Contributing](#contributing-🤝)
-- [License](#license-📜)
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Features ✨
+## Overview
 
-- **TypeScript**: Ensures type safety and better developer experience. 🛡️
-- **Material UI**: A popular React UI framework for building responsive and visually appealing interfaces. 🎨
-- **Day.js**: A lightweight JavaScript library for date and time manipulation. 🕒
-- **Redux Toolkit**: Simplifies state management with Redux. 🗂️
-- **i18n**: Internationalization support for multi-language applications. 🌍
-- **Vite**: A fast build tool for modern web projects. ⚡
-- **Reusable Components**: Includes common components like cards, buttons, tooltips, inputs, etc. 🧩
-- **Well-structured Directory Layout**: Organized structure for easy navigation and scalability. 🗂️
+The Sunnyside Landing Page is a responsive, visually appealing webpage designed to showcase the services and portfolio of a creative agency. The design is clean and modern, aimed at engaging users and providing a seamless browsing experience.
 
-## Getting Started 🚀
+## Features
 
-To get started with this template, follow these steps:
+- **Responsive Design**: Works on desktops, tablets, and mobile devices.
+- **Interactive Elements**: Includes hover effects, smooth scrolling, and dynamic content.
+- **Optimized Performance**: Fast load times and efficient asset management.
+- **Accessible**: Adheres to web accessibility standards.
 
-1. **Clone the repository:**
+## Technologies Used
 
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server.
+- **TypeScript**: A typed superset of JavaScript that helps catch errors early and improves code quality.
+- **Material-UI**: A popular React UI framework for implementing Google's Material Design.
+- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
+- **Prettier**: An opinionated code formatter.
+
+## Setup and Installation
+
+To get started with the Sunnyside Landing Page, follow these steps:
+
+1. **Clone the repository**:
     ```bash
-    git clone https://github.com/zoubaidachatti/react-typescript-template
-    cd react-typescript-template
+    git clone https://github.com/zoubaidachatti/sunnyside.git
+    cd sunnyside
     ```
 
-2. **Install dependencies:**
-
+2. **Install dependencies**:
     ```bash
-    yarn
+    yarn install
     ```
 
-3. **Start the development server:**
-
+3. **Run the development server**:
     ```bash
     yarn dev
     ```
 
-    The application will be available at `http://localhost:5173/`. 🌐
+4. **Build the project for production**:
+    ```bash
+    yarn build
+    ```
 
-## Project Structure 🏗️
+5. **Preview the production build**:
+    ```bash
+    yarn preview
+    ```
 
-The project structure is organized to facilitate scalability and maintainability:
- ```bash
-react-typescript-template/
-├── src/
-│   ├── assets/           # Static assets (images, fonts, etc.) 🖼️
-│   ├── components/       # Reusable components (cards, buttons, tooltips, inputs, etc.) 🧩
-│   ├── config/           # Configuration files ⚙️
-│   │   ├── constants/    # Constant values 🔢
-│   │   ├── enums/        # Enumerations 🗂️
-│   │   └── config.ts     # Configuration settings 🛠️
-│   ├── features/         # Feature-specific modules 🌟
-│   ├── hooks/            # Custom React hooks 🪝
-│   ├── layouts/          # Layout components 📐
-│   ├── locales/          # Localization files 🌐
-│   ├── pages/            # Page components 📄
-│   ├── redux/            # Redux setup (slices, store, etc.) 🗂️
-│   ├── routes/           # Route definitions 🛣️
-│   ├── theme/            # Theme setup and customizations 🎨
-│   ├── types/            # TypeScript types 📝
-│   │   ├── interfaces/   # TypeScript interfaces 🧩
-│   │   └── models/       # TypeScript models 🗂️
-│   ├── utils/            # Utility functions 🔧
-│   │   ├── helpers/      # Helper functions 🛠️
-│   │   ├── services/     # Service functions (e.g., API calls) 🌐
-│   │   └── validators/   # Validation functions ✅
-│   └── index.tsx         # Application entry point 🚀
-└── package.json          # Project metadata and dependencies 📦
-```
+## Usage
 
-## Dependencies 📦
+After setting up and running the development server, you can view the landing page in your browser at `http://localhost:5173`. Explore the page to see the responsive design and interactive elements in action.
 
-- **React**: JavaScript library for building user interfaces. ⚛️
-- **React Router DOM**: Declarative routing for React. 🌐
-- **TypeScript**: Superset of JavaScript that adds static types. 🛡️
-- **Material UI**: React components for faster and easier web development. 🎨
-- **Day.js**: Minimalist JavaScript library for date and time manipulation. 🕒
-- **Redux Toolkit**: Official, recommended way to write Redux logic. 🗂️
-- **i18next**: Internationalization framework for React. 🌍
-- **Vite**: Next generation frontend tooling. ⚡
+## Contributing
 
-## Usage 🔧
+Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-You can use this template to quickly bootstrap a new React project with TypeScript, Material UI, Day.js, Redux Toolkit, i18n, and Vite. The provided structure and components can be extended and customized to fit the needs of your application.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
 
-## Contributing 🤝
+## License
 
-Contributions are welcome! If you have suggestions for improvements, feel free to open an issue or create a pull request.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## License 📜
+## Acknowledgements
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+- [Frontend Mentor](https://www.frontendmentor.io/) for providing the challenge.
+- The open-source community for the amazing tools and resources.
+
+Thank you for checking out the Sunnyside Landing Page project! If you have any questions or feedback, feel free to reach out.
