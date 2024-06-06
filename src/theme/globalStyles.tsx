@@ -11,20 +11,6 @@ export default function GlobalStyles() {
           overflowX: 'hidden',
           transition: 'background-color  .2s linear',
         },
-        '*::-webkit-scrollbar': {
-          width: 6,
-          height: 7,
-        },
-        ':hover::-webkit-scrollbar': {
-          width: 6,
-          height: 7,
-        },
-        ':hover::-webkit-scrollbar-thumb:vertical': {
-          background: alpha(theme.palette.info.light, 0.2),
-        },
-        ':hover::-webkit-scrollbar-track': {
-          backgroundColor: alpha(theme.palette.info.light, 0.2),
-        },
       }}
     />
   );
