@@ -45,7 +45,7 @@ export const ColorsConfig = {
     contrastText: textPrimary,
   },
   info: {
-    main: 'hsl(212, 27%, 19%)',
+    main: 'hsl(198, 62%, 26%)',
     light: 'hsl(228, 45%, 44%)',
     dark: 'hsl(212, 27%, 19%)',
     contrastText: white50,

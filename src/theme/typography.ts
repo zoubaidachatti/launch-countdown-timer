@@ -1,7 +1,7 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
-const fontFamily1 = '"Fraunces", serif !important';
-const fontFamily2 = '"Barlow", sans-serif !important';
+export const fontFamily1 = '"Fraunces", serif !important';
+export const fontFamily2 = '"Barlow", sans-serif !important';
 
 const typography: TypographyOptions = {
   fontWeightRegular: 400,
@@ -15,13 +15,13 @@ const typography: TypographyOptions = {
     letterSpacing: '.5rem',
   },
   h2: {
-    fontWeight: 500,
+    fontWeight: 900,
     fontSize: '2.9rem',
-    lineHeight: '1.75rem',
+    lineHeight: '1',
     fontFamily: fontFamily1,
   },
   h3: {
-    fontWeight: 500,
+    fontWeight: 900,
     fontSize: '1.5rem',
     lineHeight: '1.5rem',
     fontFamily: fontFamily1,
@@ -51,19 +51,21 @@ const typography: TypographyOptions = {
     fontFamily: fontFamily2,
   },
   body2: {
-    fontSize: '0.8rem',
+    fontSize: '0.9rem',
+    fontWeight: 600,
     lineHeight: '1.25rem',
     fontFamily: fontFamily2,
   },
   subtitle1: {
-    fontSize: '1.1rem',
-    lineHeight: '1.438rem',
+    fontSize: '1.125rem',
+    lineHeight: '1.4',
+    fontWeight: 600,
     fontFamily: fontFamily2,
   },
   subtitle2: {
     fontWeight: 300,
     fontSize: '1.1rem',
-    lineHeight: '1rem',
+    lineHeight: '1.4',
     fontFamily: fontFamily2,
   },
   button: {
