@@ -1,11 +1,12 @@
 import { ColorsConfig, Layout } from '@/config/constants';
+import { fontFamily2 } from '@/theme/typography';
 import { Button, Stack, styled } from '@mui/material';
 
 export const StyledRoute = styled('a')(({ theme }) => ({
   cursor: 'pointer',
   fontSize: '1.125rem',
   color: theme.palette.grey[50],
-  fontFamily: "'Barlow', sans-serif !important",
+  fontFamily: fontFamily2,
   textDecoration: 'none',
   fontWeight: 600,
 }));
@@ -14,7 +15,7 @@ export const StyledDrawerRoute = styled('a')(({ theme }) => ({
   cursor: 'pointer',
   fontSize: '1.125rem',
   color: theme.palette.info.dark,
-  fontFamily: "'Barlow', sans-serif !important",
+  fontFamily: fontFamily2,
   textDecoration: 'none',
   fontWeight: 600,
 }));

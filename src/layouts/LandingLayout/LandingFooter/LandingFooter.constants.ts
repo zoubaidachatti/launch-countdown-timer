@@ -1,26 +1,20 @@
-const Routes = [
-  { label: 'landing.footer.route_1', route: '/' },
-  { label: 'landing.footer.route_2', route: '/' },
-  { label: 'landing.footer.route_3', route: '/' },
-];
-
-export const Links = [
+export const Routes = [
   {
-    title: 'landing.footer.title_1',
-    routes: Routes,
+    path: '/',
+    label: 'content.about',
   },
   {
-    title: 'landing.footer.title_2',
-    routes: Routes,
+    path: '/',
+    label: 'content.services',
   },
   {
-    title: 'landing.footer.title_3',
-    routes: Routes,
+    path: '/',
+    label: 'content.projects',
   },
 ];
 
-export const ExtraRoutes = [
-  { label: 'landing.footer.privacy_policy', route: '/' },
-  { label: 'landing.footer.terms_of_service', route: '/' },
-  { label: 'landing.footer.cookies_settings', route: '/' },
-];
+export const challenger = 'Frontend Mentor';
+export const coder = 'Zoubaida';
+
+export const challengerLink = 'https://www.frontendmentor.io/home';
+export const coderLink = 'https://github.com/zoubaidachatti/';
