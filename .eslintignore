@@ -1,0 +1,7 @@
+node_modules/
+public/
+__generated__
+build/
+
+dist/
+env.d.ts

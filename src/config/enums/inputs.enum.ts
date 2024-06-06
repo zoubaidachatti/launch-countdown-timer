@@ -1,0 +1,15 @@
+export enum InputType {
+  TEXT = 'text',
+  TEXTAREA = 'textarea',
+  NUMBER = 'number',
+  DATE = 'date',
+  FILE = 'file',
+  CHECKBOX = 'checkbox',
+  RADIO = 'radio',
+  PASSWORD = 'password',
+  PHONE = 'phone',
+  SELECT = 'select',
+  COLOR_PICKER = 'color-picker',
+  RANGE = 'range',
+  SWITCH = 'switch',
+}

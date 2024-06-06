@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g transform="translate(0.319 0.319)">
+        <g data-name="invisible box">
+            <rect width="16" height="16" transform="translate(-0.319 -0.319)" fill="none" />
+        </g>
+        <g transform="translate(3.201 1.275)">
+            <path id="sortUp"
+                d="M14.481,31.557l-3.392-3.392a.608.608,0,0,0-.96.064.672.672,0,0,0,.064.864l3.84,3.808a.608.608,0,0,0,.9,0l3.84-3.808a.672.672,0,0,0,.064-.864.608.608,0,0,0-.96-.064Z"
+                transform="translate(-10.001 -20.287)" />
+            <path id="sortDown"
+                d="M14.481,5.526l3.392,3.392a.608.608,0,0,0,.96-.064.672.672,0,0,0-.064-.864l-3.84-3.808a.608.608,0,0,0-.9,0L10.193,7.99a.672.672,0,0,0-.064.864.608.608,0,0,0,.96.064Z"
+                transform="translate(-10.001 -3.985)" />
+        </g>
+    </g>
+</svg>

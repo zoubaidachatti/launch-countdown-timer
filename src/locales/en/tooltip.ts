@@ -1,0 +1,48 @@
+export const tooltip = {
+  tooltip: 'Tooltip',
+  basic_tooltip: 'Basic tooltips',
+  top_start: 'Top Start',
+  top: 'Top',
+  left: 'Left',
+  right: 'Right',
+  bottom: 'Bottom',
+  bottom_end: 'Bottom End',
+  left_end: 'Left End',
+  left_start: 'Left Start',
+  right_start: 'Right Start',
+  bottom_start: 'Bottom Start',
+  top_end: 'Top End',
+  right_end: 'Right End',
+
+  frog_facts: 'Some frogs can jump up to 20 times their body length in a single leap.',
+  cat_facts: 'They have 9 lives.',
+  dog_facts: 'Dogs can understand up to 250 words and gestures, and they can count up to five.',
+  rabbit_facts: 'Rabbits have a lifespan of around 10 years and are herbivores.',
+  turtle_facts:
+    'Turtles are one of the oldest reptile groups, with fossils dating back about 220 million years.',
+  raccoon_facts: 'They like to steal.',
+  lama_facts: 'Just a cool looking horse with more fur',
+  alien_facts: "They don't exist",
+  unicorn_facts:
+    'Unicorns are mythical creatures often depicted as horse-like beings with a single horn on their forehead.',
+  panda_facts: 'Giant pandas are solitary animals and spend most of their time eating bamboo.',
+  hamster_facts:
+    'Hamsters are nocturnal rodents and are known for their cheek pouches, which they use to carry food.',
+  bear_facts: 'Polar bears are the largest land carnivores and are excellent swimmers.',
+
+  frog_facts_title: '🐸 Frog Facts',
+  cat_facts_title: '🐱 Cat Facts',
+  dog_facts_title: '🐶 Dog Facts',
+  rabbit_facts_title: '🐰 Rabbit Facts',
+  turtle_facts_title: '🐢 Turtle Facts',
+  raccoon_facts_title: '🦝 Raccoon Facts',
+  lama_facts_title: '🦙 Lama Facts',
+  alien_facts_title: '👽 Alien Facts',
+  unicorn_facts_title: '🦄 Unicorn Facts',
+  panda_facts_title: '🐼 Panda Facts',
+  hamster_facts_title: '🐹 Hamster Facts',
+  bear_facts_title: '🐻 Bear Facts',
+
+  normal_tooltip: 'Normal tooltip',
+  tooltip_with_arrow: 'Tooltip with arrow',
+};
