@@ -27,7 +27,7 @@ const typography: TypographyOptions = {
     fontFamily: fontFamily1,
   },
   h4: {
-    fontWeight: 500,
+    fontWeight: 900,
     fontSize: '1.25rem',
     lineHeight: '1.3rem',
     fontFamily: fontFamily1,
@@ -46,8 +46,9 @@ const typography: TypographyOptions = {
     fontFamily: fontFamily1,
   },
   body1: {
-    fontSize: '1.1rem',
-    lineHeight: '1.313rem',
+    fontSize: '1.125rem',
+    lineHeight: '1.6',
+    fontWeight: 600,
     fontFamily: fontFamily2,
   },
   body2: {

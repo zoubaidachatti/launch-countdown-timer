@@ -9,12 +9,12 @@ export const CardsSection = () => {
     <Grid container width={'100%'}>
       {cards.map((card, index) => (
         <Grid
-          minHeight={400}
+          height={{ xs: 400, sm: 700, md: 400 }}
           sx={{ aspectRatio: '1 / 1' }}
           key={`card_${index}`}
           item
           xs={12}
-          md={6}
+          sm={6}
         >
           {card.type === CardType.content && card.title && card.content && (
             <ContentCard isFirst={index === 0} {...card} />

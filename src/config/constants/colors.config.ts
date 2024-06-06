@@ -66,7 +66,7 @@ export const ColorsConfig = {
     600: white400,
     700: white400,
     800: white400,
-    900: white400,
+    900: '#000',
     A100: white400,
     A200: white400,
     A400: white400,

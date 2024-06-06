@@ -1,4 +1,5 @@
-import { HeroSection, CardsSection } from '@/features';
+import { CardsSection, HeroSection } from '@/features';
+import Testimonials from '@/features/Landing/Testimonials/Testimonials';
 import { Stack } from '@mui/material';
 
 export const LandingPage = () => {
@@ -6,6 +7,7 @@ export const LandingPage = () => {
     <Stack width={'100%'}>
       <HeroSection />
       <CardsSection />
+      <Testimonials />
     </Stack>
   );
 };
