@@ -72,7 +72,7 @@ export const LandingNavbar = () => {
 
           <Stack
             alignItems={'center'}
-            spacing={'2.4rem'}
+            spacing={{ xs: '2rem', md: '2.4rem' }}
             direction={'row'}
             display={{ xs: 'none', sm: 'flex' }}
           >

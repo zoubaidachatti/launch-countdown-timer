@@ -25,5 +25,12 @@ export const content = {
 
   client_testimonials: 'CLIENT TESTIMONIALS',
 
+  testimonial_1:
+    'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
+  testimonial_2:
+    'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
+  testimonial_3:
+    'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
+
   challenged_by_code_by: 'Challenge by <a>{{challenger}}</a>. Coded by <span>{{coder}}<span/>.',
 };
