@@ -1,7 +1,8 @@
+import { RouterPaths } from '@/config/constants';
 import { RouteIdEnum } from '@/config/enums';
 import { LandingLayout } from '@/layouts';
-import { RouteObject } from 'react-router-dom';
-import { LandingPage, NotFoundPage } from './routes.constants';
+import { Navigate, RouteObject } from 'react-router-dom';
+import { LandingPage } from './routes.constants';
 
 export const RoutesConfig: RouteObject[] = [
   {
@@ -14,10 +15,6 @@ export const RoutesConfig: RouteObject[] = [
   },
   {
     path: RouteIdEnum.Any,
-    element: <NotFoundPage />,
-  },
-  {
-    path: RouteIdEnum.NotFound,
-    element: <NotFoundPage />,
+    element: <Navigate to={RouterPaths.RootPaths.rootPath} />,
   },
 ];
