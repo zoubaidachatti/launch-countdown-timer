@@ -1,4 +1,3 @@
-import AppLogo from '@/assets/full.svg?react';
 import FacebookIcon from '@/assets/icons/facebook.svg?react';
 import InstagramIcon from '@/assets/icons/instagram.svg?react';
 import LinkedInIcon from '@/assets/icons/linkedin.svg?react';
@@ -26,7 +25,7 @@ export const LandingFooter = () => {
       <Grid container gap={{ xs: 2, sm: 0 }}>
         <Grid item xs={12} sm={3}>
           <LogoContainer alignItems={'center'} justifyContent={'center'}>
-            <AppLogo />
+            {/* LOGO */}
           </LogoContainer>
         </Grid>
         {Links.map(({ title, routes }) => (

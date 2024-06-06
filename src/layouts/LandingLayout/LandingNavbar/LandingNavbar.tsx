@@ -1,5 +1,4 @@
 import MenuIcon from '@/assets/icons/menu.svg?react';
-import AppLogoSmall from '@/assets/small.svg?react';
 import { RouterPaths } from '@/config/constants';
 import { MediaQueryEnum } from '@/config/enums';
 import { useResponsive, useScroll } from '@/hooks';
@@ -81,10 +80,7 @@ export const LandingNavbar = () => {
             scrolling={`${isPastThreshold}`}
           >
             <MenuIcon onClick={() => setOpenDrawer((prev) => !prev)} />
-            <AppLogoSmall
-              id={'logo'}
-              onClick={() => navigate(RouterPaths.DashboardPaths.homePath)}
-            />
+            {/* LOGO */}
           </MenuIconContainer>
           <Stack>
             {!isSmallScreen && (
@@ -93,7 +89,7 @@ export const LandingNavbar = () => {
                 sx={{ fontWeight: 700, fontSize: '1.4rem' }}
                 onClick={() => navigate(RouterPaths.DashboardPaths.homePath)}
               >
-                <AppLogoSmall />
+                {/* LOGO */}
               </StyledRoute>
             )}
           </Stack>
