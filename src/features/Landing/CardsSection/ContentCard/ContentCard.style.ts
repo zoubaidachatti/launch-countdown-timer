@@ -14,7 +14,7 @@ export const StyledLink = styled('a')(({ theme }) => ({ first }: { first: string
   '::before': {
     content: '""',
     position: 'absolute',
-    bottom: '.3rem',
+    bottom: '10px',
     left: 0,
     width: '100%',
     height: '.7rem',
