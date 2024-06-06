@@ -1,14 +1,14 @@
 export const navbarRoutes = [
   {
     path: '/',
-    label: 'common.route_1',
+    label: 'content.about',
   },
   {
     path: '/',
-    label: 'common.route_2',
+    label: 'content.services',
   },
   {
     path: '/',
-    label: 'common.route_3',
+    label: 'content.projects',
   },
 ];

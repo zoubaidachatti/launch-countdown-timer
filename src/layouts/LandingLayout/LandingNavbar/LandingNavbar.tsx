@@ -1,12 +1,10 @@
-import MenuIcon from '@/assets/icons/menu.svg?react';
-import { RouterPaths } from '@/config/constants';
+import Logo from '@/assets/logo.svg';
+import MenuIcon from '@/assets/icons/stack.svg?react';
 import { MediaQueryEnum } from '@/config/enums';
-import { useResponsive, useScroll } from '@/hooks';
-import { Drawer, Stack, alpha } from '@mui/material';
+import { useResponsive } from '@/hooks';
+import { Drawer, Stack } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
-import { NavbarHeight } from '../LandingLayout.constants';
 import { navbarRoutes } from './LandingNavbar.constants';
 import {
   MenuIconContainer,
@@ -17,10 +15,8 @@ import {
 
 export const LandingNavbar = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [openDrawer, setOpenDrawer] = useState(false);
   const isSmallScreen = useResponsive(MediaQueryEnum.DOWN, 'sm') as boolean;
-  const isPastThreshold = useScroll();
 
   useEffect(() => {
     if (!isSmallScreen) {
@@ -43,11 +39,12 @@ export const LandingNavbar = () => {
         }}
       >
         <Stack
-          spacing={1}
+          spacing={'2.4rem'}
           direction={'column'}
           minWidth={'80vw'}
           height={'100vh'}
           justifyContent={'center'}
+          alignItems={'center'}
         >
           {navbarRoutes.map((route, index) => (
             <StyledDrawerRoute key={`route_${index}_drawer`}>{t(route.label)}</StyledDrawerRoute>
@@ -55,17 +52,12 @@ export const LandingNavbar = () => {
         </Stack>
       </Drawer>
       <Stack
-        position={'fixed'}
-        minHeight={NavbarHeight}
-        justifyContent={'center'}
-        paddingInline={{ xs: 2, md: 10 }}
+        position={'absolute'}
+        top={0}
+        paddingInline={{ xs: 2.5, md: '2.5rem' }}
+        paddingTop={{ xs: 2.5, md: '2.5rem' }}
         width={'100%'}
-        zIndex={11}
-        bgcolor={(theme) => (isPastThreshold ? alpha(theme.palette.grey[100], 0.5) : 'transparent')}
-        sx={{
-          backdropFilter: 'blur(10px)',
-          transition: 'all 0.3s ease',
-        }}
+        bgcolor={'transparent'}
       >
         <Stack
           direction={'row'}
@@ -73,46 +65,21 @@ export const LandingNavbar = () => {
           justifyContent={'space-between'}
           alignItems={'center'}
         >
-          <MenuIconContainer
-            display={{ xs: 'flex', sm: 'none' }}
-            direction={'row'}
-            spacing={1}
-            scrolling={`${isPastThreshold}`}
-          >
+          <img alt={'logo'} src={Logo} style={{ width: '8rem', userSelect: 'none' }} />
+          <MenuIconContainer display={{ xs: 'flex', sm: 'none' }}>
             <MenuIcon onClick={() => setOpenDrawer((prev) => !prev)} />
-            {/* LOGO */}
           </MenuIconContainer>
-          <Stack>
-            {!isSmallScreen && (
-              <StyledRoute
-                scrolling={`${isPastThreshold}`}
-                sx={{ fontWeight: 700, fontSize: '1.4rem' }}
-                onClick={() => navigate(RouterPaths.DashboardPaths.homePath)}
-              >
-                {/* LOGO */}
-              </StyledRoute>
-            )}
-          </Stack>
-          <Stack spacing={1} direction={'row'} display={{ xs: 'none', sm: 'flex' }}>
+
+          <Stack
+            alignItems={'center'}
+            spacing={'2.4rem'}
+            direction={'row'}
+            display={{ xs: 'none', sm: 'flex' }}
+          >
             {navbarRoutes.map((route, index) => (
-              <StyledRoute scrolling={`${isPastThreshold}`} key={`route_${index}`}>
-                {t(route.label)}
-              </StyledRoute>
+              <StyledRoute key={`route_${index}`}>{t(route.label)}</StyledRoute>
             ))}
-          </Stack>
-          <Stack direction={'row'} gap={1} alignItems={'center'}>
-            <StyledRoute
-              scrolling={`${isPastThreshold}`}
-              onClick={() => navigate(RouterPaths.AuthPaths.loginPath)}
-            >
-              {t('auth.login')}
-            </StyledRoute>
-            <StyledButton
-              onClick={() => navigate(RouterPaths.RegisterPaths.inscriptionPath)}
-              variant={'contained'}
-            >
-              {t('auth.register')}
-            </StyledButton>
+            <StyledButton>{t('content.contact')}</StyledButton>
           </Stack>
         </Stack>
       </Stack>

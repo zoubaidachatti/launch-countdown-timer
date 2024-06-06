@@ -4,7 +4,7 @@ import { RootStyle } from './LandingLayout.style';
 
 export const LandingLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <RootStyle direction="column" alignItems={'flex-start'} justifyContent={'space-between'}>
+    <RootStyle>
       <LandingNavbar />
       {children}
       <LandingFooter />

@@ -1,56 +1,36 @@
-import { ColorsConfig } from '@/config/constants';
+import { ColorsConfig, Layout } from '@/config/constants';
 import { Button, Stack, styled } from '@mui/material';
 
-export const StyledRoute = styled(Button)(
-  ({ theme }) =>
-    ({ scrolling }: { scrolling?: string }) => ({
-      color: scrolling === `${true}` ? theme.palette.grey[900] : theme.palette.grey[50],
-      fontWeight: 600,
-      svg: {
-        fill: scrolling === `${true}` ? theme.palette.grey[900] : theme.palette.grey[50],
-        transition: 'all 0.5s ease',
-        width: 35,
-        height: 35,
-      },
-
-      [theme.breakpoints.down('sm')]: {
-        fontSize: '0.75rem',
-        minWidth: 40,
-        width: 80,
-        height: 24,
-      },
-    }),
-);
-export const StyledDrawerRoute = styled(Button)(({ theme }) => ({
-  color: theme.palette.grey[900],
+export const StyledRoute = styled('a')(({ theme }) => ({
+  cursor: 'pointer',
+  fontSize: '1.125rem',
+  color: theme.palette.grey[50],
+  fontFamily: "'Barlow', sans-serif !important",
+  textDecoration: 'none',
   fontWeight: 600,
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
-  },
+}));
+
+export const StyledDrawerRoute = styled('a')(({ theme }) => ({
+  cursor: 'pointer',
+  fontSize: '1.125rem',
+  color: theme.palette.info.dark,
+  fontFamily: "'Barlow', sans-serif !important",
+  textDecoration: 'none',
+  fontWeight: 600,
 }));
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  color: ColorsConfig.grey[50],
-  backgroundColor: ColorsConfig.grey[900],
-  whiteSpace: 'nowrap',
+  backgroundColor: ColorsConfig.grey[50],
+  color: theme.palette.info.dark,
+  borderRadius: '2rem',
+  padding: '.7rem 1rem',
+  transition: Layout.transition,
   ':hover': {
-    backgroundColor: ColorsConfig.grey[900],
-  },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '0.75rem',
-    minWidth: 40,
+    backgroundColor: ColorsConfig.grey[100],
+    color: theme.palette.grey[50],
   },
 }));
 
-export const MenuIconContainer = styled(Stack)(
-  ({ theme }) =>
-    ({ scrolling }: { scrolling?: string }) => ({
-      svg: {
-        fill: scrolling === `${true}` ? theme.palette.grey[900] : theme.palette.grey[50],
-        width: 25,
-        height: 25,
-      },
-
-      cursor: 'pointer',
-    }),
-);
+export const MenuIconContainer = styled(Stack)(() => ({
+  cursor: 'pointer',
+}));

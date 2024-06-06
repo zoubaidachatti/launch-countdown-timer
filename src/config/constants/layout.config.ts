@@ -1,9 +1,9 @@
 import { alpha } from '@mui/material';
 
 export const Layout = {
-  borderRadius: 5,
-  checkboxBorderRadius: 4,
-  inputRadius: 5,
+  borderRadius: 0,
+  checkboxBorderRadius: 0,
+  inputRadius: 0,
   inputPadding: 11,
   inputFocusBorderWidth: '1px',
   padding: '30px 3%',
@@ -15,6 +15,7 @@ export const Layout = {
   tabsHeight: '30px',
   breadcrumbPadding: '0',
   pageSpacing: '14px',
+  transition: 'all 0.5s ease',
   linearGradient: (dark: string, main: string, light: string) =>
     `linear-gradient(140deg, ${dark} -37%, ${main} 41%, ${light} 79%)`,
   landingPageGradient: (dark: string, light: string) =>
