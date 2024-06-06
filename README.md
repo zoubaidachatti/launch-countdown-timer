@@ -20,7 +20,6 @@ The Sunnyside Landing Page is a responsive, visually appealing webpage designed 
 ## Features
 
 - **Responsive Design**: Works on desktops, tablets, and mobile devices.
-- **Interactive Elements**: Includes hover effects, smooth scrolling, and dynamic content.
 - **Optimized Performance**: Fast load times and efficient asset management.
 - **Accessible**: Adheres to web accessibility standards.
 
