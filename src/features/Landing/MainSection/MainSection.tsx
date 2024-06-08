@@ -4,6 +4,7 @@ import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { StyledButton } from './MainSection.style';
 import { news } from './MainSection.constants';
+import { Layout } from '@/config/constants';
 
 export const MainSection = () => {
   const { t } = useTranslation();
@@ -65,11 +66,26 @@ export const MainSection = () => {
               key={`new_${index}`}
               spacing={1}
               paddingBlock={2}
+              sx={{
+                cursor: 'pointer',
+                ':hover': {
+                  '#title': {
+                    color: (th) => th.palette.secondary.main,
+                    transition: Layout.transition,
+                  },
+                  '#content': {
+                    color: (th) => th.palette.grey[100],
+                    transition: Layout.transition,
+                  },
+                },
+              }}
             >
-              <Typography color="grey.50" variant="h4">
+              <Typography color="grey.50" variant="h4" id={'title'}>
                 {t(title)}
               </Typography>
-              <Typography variant="body1">{t(description)}</Typography>
+              <Typography variant="body1" id={'content'}>
+                {t(description)}
+              </Typography>
             </Stack>
           ))}
         </Stack>

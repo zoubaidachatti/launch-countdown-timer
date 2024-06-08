@@ -20,5 +20,13 @@ export const content = {
   new_3_description:
     'Private funding by VC firms is down 50% YOY. We take a look at what that means.',
 
+  product_1_title: 'Reviving Retro PCs',
+  product_2_title: 'Top 10 Laptops of 2022',
+  product_3_title: 'The Growth of Gaming',
+
+  product_1_description: 'What happens when old PCs are given modern upgrades?',
+  product_2_description: 'Our best picks for various needs and budgets.',
+  product_3_description: 'How the pandemic has sparked fresh opportunities.',
+
   challenged_by_code_by: 'Challenge by <a>{{challenger}}</a>. Coded by <span>{{coder}}<span/>.',
 };
