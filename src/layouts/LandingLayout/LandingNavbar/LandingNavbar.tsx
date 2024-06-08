@@ -1,5 +1,4 @@
 import Logo from '@/assets/logo.svg';
-import MenuIcon from '@/assets/icons/stack.svg?react';
 import { MediaQueryEnum } from '@/config/enums';
 import { useResponsive } from '@/hooks';
 import { Drawer, Stack } from '@mui/material';
@@ -66,9 +65,7 @@ export const LandingNavbar = () => {
           alignItems={'center'}
         >
           <img alt={'logo'} src={Logo} style={{ width: '8rem', userSelect: 'none' }} />
-          <MenuIconContainer display={{ xs: 'flex', sm: 'none' }}>
-            <MenuIcon onClick={() => setOpenDrawer((prev) => !prev)} />
-          </MenuIconContainer>
+          <MenuIconContainer display={{ xs: 'flex', sm: 'none' }}></MenuIconContainer>
 
           <Stack
             alignItems={'center'}
