@@ -1,1 +1,1 @@
-export * from './OtherPages';
+export * from './CountDownPage';

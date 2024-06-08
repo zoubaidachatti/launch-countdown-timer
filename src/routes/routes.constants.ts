@@ -1,7 +1,5 @@
 import { lazy } from 'react';
 
-const LandingPage = lazy(() => import('@/pages/OtherPages/LandingPage/LandingPage'));
+const CountDownPage = lazy(() => import('@/pages/CountDownPage'));
 
-const NotFoundPage = lazy(() => import('@/pages/OtherPages/NotFoundPage/NotFoundPage'));
-
-export { LandingPage, NotFoundPage };
+export { CountDownPage };

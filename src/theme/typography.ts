@@ -1,24 +1,24 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
-// - Family: [Inter](https://fonts.google.com/specimen/Inter)
-// - Weights: 400, 700, 800
+// - Family: [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)
+// - Weights: 700
 
 const typography: TypographyOptions = {
-  fontWeightRegular: 400,
+  fontWeightRegular: 700,
   fontWeightMedium: 700,
-  fontWeightBold: 800,
+  fontWeightBold: 700,
   h1: {
-    fontWeight: 800,
-    fontSize: '3.5rem',
-    lineHeight: '3.5rem',
+    fontWeight: 700,
+    fontSize: '3.125rem',
+    lineHeight: '1',
   },
   h2: {
     fontWeight: 700,
-    fontSize: '2.9rem',
-    lineHeight: '1',
+    fontSize: '1.375rem',
+    letterSpacing: 'clamp(0.3em, 5vw, 0.275em)',
   },
   h3: {
-    fontWeight: 800,
+    fontWeight: 700,
     fontSize: '1.5rem',
     lineHeight: '1.5rem',
   },
@@ -34,27 +34,27 @@ const typography: TypographyOptions = {
     textTransform: 'none',
   },
   h6: {
-    fontWeight: 800,
+    fontWeight: 700,
     fontSize: '1rem',
     lineHeight: '1.1rem',
   },
   body1: {
-    fontSize: '0.938rem',
+    fontSize: 'clamp(0.7rem, 1vw, 1.4rem)',
     lineHeight: '1.6',
-    fontWeight: 400,
+    fontWeight: 700,
   },
   body2: {
     fontSize: '0.938rem',
-    fontWeight: 400,
+    fontWeight: 700,
     lineHeight: '1.25rem',
   },
   subtitle1: {
     fontSize: '0.938rem',
     lineHeight: '1.4',
-    fontWeight: 400,
+    fontWeight: 700,
   },
   subtitle2: {
-    fontWeight: 400,
+    fontWeight: 700,
     fontSize: '0.938rem',
     lineHeight: '1.4',
   },

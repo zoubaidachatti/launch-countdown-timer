@@ -115,3 +115,45 @@ export const calculateTimePassed = (timestamp: number) => {
       };
   }
 };
+
+export const calculateTimeRemaining = (targetDate: number) => {
+  const currentDate = dayjs();
+  const targetDateTime = dayjs.unix(targetDate);
+
+  const d = dayjs.duration(targetDateTime.diff(currentDate));
+  targetDateTime.diff(currentDate, 'days');
+  const years = d.years();
+  const months = d.months();
+  let days = 0;
+  if (months) {
+    days = d.days() + 30 * months;
+  } else {
+    days = d.days();
+  }
+  const hours = d.hours();
+  const minutes = d.minutes();
+  const seconds = d.seconds();
+
+  return [
+    {
+      value: years > 0 ? years : 0,
+      label: years >= GlobalVariables.manyDataLength ? 'content.years' : 'calendar.year',
+    },
+    {
+      value: days > 0 ? days : 0,
+      label: days >= GlobalVariables.manyDataLength ? 'content.days' : 'content.day',
+    },
+    {
+      value: hours > 0 ? hours : 0,
+      label: hours >= GlobalVariables.manyDataLength ? 'content.hours' : 'content.hour',
+    },
+    {
+      value: minutes > 0 ? minutes : 0,
+      label: minutes >= GlobalVariables.manyDataLength ? 'content.minutes' : 'content.minute',
+    },
+    {
+      value: seconds > 0 ? seconds : 0,
+      label: seconds >= GlobalVariables.manyDataLength ? 'content.seconds' : 'content.second',
+    },
+  ];
+};

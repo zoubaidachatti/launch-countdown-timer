@@ -1,7 +1,7 @@
 import { alpha } from '@mui/material';
 
 export const Layout = {
-  borderRadius: 0,
+  borderRadius: '8px',
   checkboxBorderRadius: 0,
   inputRadius: 0,
   inputPadding: 11,
