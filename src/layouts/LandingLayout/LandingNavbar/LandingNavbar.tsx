@@ -1,16 +1,12 @@
-import Logo from '@/assets/logo.svg';
+import StackIcon from '@/assets/icon-menu.svg?react';
+import LogoIcon from '@/assets/logo.svg?react';
 import { MediaQueryEnum } from '@/config/enums';
 import { useResponsive } from '@/hooks';
 import { Drawer, Stack } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { navbarRoutes } from './LandingNavbar.constants';
-import {
-  MenuIconContainer,
-  StyledButton,
-  StyledDrawerRoute,
-  StyledRoute,
-} from './LandingNavbar.style';
+import { MenuIconContainer, StyledRoute } from './LandingNavbar.style';
 
 export const LandingNavbar = () => {
   const { t } = useTranslation();
@@ -46,27 +42,24 @@ export const LandingNavbar = () => {
           alignItems={'center'}
         >
           {navbarRoutes.map((route, index) => (
-            <StyledDrawerRoute key={`route_${index}_drawer`}>{t(route.label)}</StyledDrawerRoute>
+            <StyledRoute key={`route_${index}_drawer`}>{t(route.label)}</StyledRoute>
           ))}
         </Stack>
       </Drawer>
-      <Stack
-        position={'absolute'}
-        top={0}
-        paddingInline={{ xs: 2.5, md: '2.5rem' }}
-        paddingTop={{ xs: 2.5, md: '2.5rem' }}
-        width={'100%'}
-        bgcolor={'transparent'}
-      >
+      <Stack top={0} width={'100%'} bgcolor={'transparent'}>
         <Stack
           direction={'row'}
           width={'100%'}
           justifyContent={'space-between'}
           alignItems={'center'}
         >
-          <img alt={'logo'} src={Logo} style={{ width: '8rem', userSelect: 'none' }} />
-          <MenuIconContainer display={{ xs: 'flex', sm: 'none' }}></MenuIconContainer>
-
+          <LogoIcon />
+          <MenuIconContainer
+            display={{ xs: 'flex', sm: 'none' }}
+            onClick={() => setOpenDrawer(true)}
+          >
+            <StackIcon />
+          </MenuIconContainer>
           <Stack
             alignItems={'center'}
             spacing={{ xs: '2rem', md: '2.4rem' }}
@@ -76,7 +69,6 @@ export const LandingNavbar = () => {
             {navbarRoutes.map((route, index) => (
               <StyledRoute key={`route_${index}`}>{t(route.label)}</StyledRoute>
             ))}
-            <StyledButton>{t('content.contact')}</StyledButton>
           </Stack>
         </Stack>
       </Stack>

@@ -7,7 +7,7 @@ export default function GlobalStyles() {
     <GlobalThemeStyles
       styles={{
         body: {
-          backgroundColor: theme.palette.grey[200],
+          backgroundColor: theme.palette.grey[50],
           overflowX: 'hidden',
           transition: 'background-color  .2s linear',
         },
