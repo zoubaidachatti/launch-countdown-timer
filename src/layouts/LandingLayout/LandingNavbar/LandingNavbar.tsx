@@ -1,4 +1,5 @@
 import StackIcon from '@/assets/icon-menu.svg?react';
+import CloseIcon from '@/assets/icon-menu-close.svg?react';
 import LogoIcon from '@/assets/logo.svg?react';
 import { MediaQueryEnum } from '@/config/enums';
 import { useResponsive } from '@/hooks';
@@ -40,7 +41,22 @@ export const LandingNavbar = () => {
           height={'100vh'}
           justifyContent={'center'}
           alignItems={'center'}
+          position={'relative'}
         >
+          <Stack
+            onKeyUp={(e) => {
+              if (e.key === 'Enter') {
+                setOpenDrawer(false);
+              }
+            }}
+            component={'div'}
+            tabIndex={0}
+            position={'absolute'}
+            top={12}
+            right={12}
+          >
+            <CloseIcon />
+          </Stack>
           {navbarRoutes.map((route, index) => (
             <StyledRoute key={`route_${index}_drawer`}>{t(route.label)}</StyledRoute>
           ))}
@@ -57,6 +73,12 @@ export const LandingNavbar = () => {
           <MenuIconContainer
             display={{ xs: 'flex', sm: 'none' }}
             onClick={() => setOpenDrawer(true)}
+            tabIndex={0}
+            onKeyUp={(e) => {
+              if (e.key === 'Enter') {
+                setOpenDrawer(true);
+              }
+            }}
           >
             <StackIcon />
           </MenuIconContainer>

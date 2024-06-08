@@ -1,9 +1,10 @@
 import { Layout } from '@/config/constants';
-import { Stack, styled } from '@mui/material';
+import { Button, Stack, styled } from '@mui/material';
 
-export const StyledRoute = styled('a')(({ theme }) => ({
+export const StyledRoute = styled(Button)(({ theme }) => ({
   cursor: 'pointer',
   color: theme.palette.grey[200],
+  fontWeight: 400,
   textDecoration: 'none',
   ':hover': {
     color: theme.palette.grey[900],

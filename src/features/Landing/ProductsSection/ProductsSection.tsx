@@ -9,6 +9,8 @@ export const ProductsSection = () => {
     <Stack gap={'1.5rem'} direction={{ md: 'row', xs: 'column' }} flexWrap={'wrap'}>
       {products.map(({ title, description, src }, index) => (
         <Stack
+          component={'div'}
+          tabIndex={0}
           direction={'row'}
           paddingBlock={2}
           spacing={2.5}

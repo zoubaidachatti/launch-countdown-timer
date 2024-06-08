@@ -62,6 +62,8 @@ export const MainSection = () => {
         <Stack justifyContent={'space-evenly'} height={'100%'}>
           {news.map(({ title, description }, index) => (
             <Stack
+              component={'div'}
+              tabIndex={0}
               borderBottom={index !== news.length - 1 ? '1px solid' : 'none'}
               key={`new_${index}`}
               spacing={1}
