@@ -1,6 +1,6 @@
-# Sunnyside Landing Page
+# News Homepage
 
-Welcome to the Sunnyside Landing Page project! This is a frontend challenge I completed from [Frontend Mentor](https://www.frontendmentor.io/). The goal was to build a landing page using modern web development technologies. I chose to implement this project using React, Vite, and TypeScript.
+Welcome to the News homepage project! I completed This frontend challenge from [Frontend Mentor](https://www.frontendmentor.io/). The goal was to build a news homepage page using modern web development technologies. I chose to implement this project using React, Vite, and TypeScript.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Welcome to the Sunnyside Landing Page project! This is a frontend challenge I co
 
 ## Overview
 
-The Sunnyside Landing Page is a responsive, visually appealing webpage designed to showcase the services and portfolio of a creative agency. The design is clean and modern, aimed at engaging users and providing a seamless browsing experience.
+The News Homepage project is a responsive and visually appealing webpage designed to present the latest news articles in an engaging and organized manner. The design is clean and modern, aimed at providing users with an excellent reading experience across all devices. It includes sections such as featured articles, recent news, and categories to help users easily navigate the content.
 
 ## Features
 
@@ -38,8 +38,8 @@ To get started with the Sunnyside Landing Page, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/zoubaidachatti/sunnyside.git
-    cd sunnyside
+    git clone https://github.com/zoubaidachatti/news-homepage.git
+    cd news-homepage
     ```
 
 2. **Install dependencies**:
