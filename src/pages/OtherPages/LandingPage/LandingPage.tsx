@@ -1,7 +1,11 @@
-import { Stack } from '@mui/material';
+import { MainSection } from '@/features';
 
 export const LandingPage = () => {
-  return <Stack width={'100%'}></Stack>;
+  return (
+    <>
+      <MainSection />
+    </>
+  );
 };
 
 export default LandingPage;

@@ -9,12 +9,11 @@ const typography: TypographyOptions = {
   fontWeightBold: 800,
   h1: {
     fontWeight: 800,
-    fontSize: '3rem',
-    lineHeight: '3rem',
-    letterSpacing: '.5rem',
+    fontSize: '3.5rem',
+    lineHeight: '3.5rem',
   },
   h2: {
-    fontWeight: 800,
+    fontWeight: 700,
     fontSize: '2.9rem',
     lineHeight: '1',
   },
@@ -24,14 +23,14 @@ const typography: TypographyOptions = {
     lineHeight: '1.5rem',
   },
   h4: {
-    fontWeight: 800,
-    fontSize: '1.25rem',
+    fontWeight: 700,
+    fontSize: '1.1rem',
     lineHeight: '1.3rem',
   },
   h5: {
     fontSize: '1.1rem',
     lineHeight: '1.2rem',
-    fontWeight: 800,
+    fontWeight: 700,
     textTransform: 'none',
   },
   h6: {
