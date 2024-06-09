@@ -4,12 +4,12 @@ import PinterestIcon from '@/assets/icons/icon-pinterest.svg?react';
 import { Counter } from '@/features';
 import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { SVGContainer } from './CountDownPage.style';
+import { RootStyle, SVGContainer } from './CountDownPage.style';
 
 export const CountDownPage = () => {
   const { t } = useTranslation();
   return (
-    <Stack
+    <RootStyle
       alignItems={'center'}
       justifyContent={'space-between'}
       height="100vh"
@@ -32,7 +32,7 @@ export const CountDownPage = () => {
         <PinterestIcon />
         <IgIcon />
       </SVGContainer>
-    </Stack>
+    </RootStyle>
   );
 };
 
