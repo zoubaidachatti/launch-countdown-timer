@@ -1,7 +1,7 @@
 import { GlobalStyles as GlobalThemeStyles } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import Hills from '@/assets/images/pattern-hills.svg';
-import Stars from '@/assets/images/bg-stars.svg';
+import Hills from '../assets/images/pattern-hills.svg';
+import Stars from '../assets/images/bg-stars.svg';
 
 export default function GlobalStyles() {
   const theme = useTheme();
