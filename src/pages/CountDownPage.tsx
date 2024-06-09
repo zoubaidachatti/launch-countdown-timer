@@ -1,6 +1,6 @@
-import FBIcon from '@/assets/icon-facebook.svg?react';
-import IgIcon from '@/assets/icon-instagram.svg?react';
-import PinterestIcon from '@/assets/icon-pinterest.svg?react';
+import FBIcon from '@/assets/icons/icon-facebook.svg?react';
+import IgIcon from '@/assets/icons/icon-instagram.svg?react';
+import PinterestIcon from '@/assets/icons/icon-pinterest.svg?react';
 import { Counter } from '@/features';
 import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
