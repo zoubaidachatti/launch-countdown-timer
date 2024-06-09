@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  background:
+    url(/src/assets/images/pattern-hills.svg) no-repeat bottom right 20%,
+    url(/src/assets/images/bg-stars.svg),
+    linear-gradient(to bottom, #191a24, #261e2f);
+  background-size: 100%, cover;
 }
 * {
   font-family: 'Red Hat Text', sans-serif !important;
