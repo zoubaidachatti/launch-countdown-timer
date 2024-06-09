@@ -11,12 +11,12 @@ const CounterItem = ({ value, label }: { value: number; label: string }) => {
         borderRadius={Layout.borderRadius}
         bgcolor={'grey.900'}
         width={{ xs: 70, sm: 130 }}
-        height="129px"
+        height={{ xs: 80, sm: '129px' }}
       >
         <Box
           borderRadius={Layout.borderRadius}
           width={{ xs: 70, sm: 130 }}
-          height="121px"
+          height={{ xs: 73, sm: '121px' }}
           position={'relative'}
           overflow={'hidden'}
         >
@@ -26,7 +26,7 @@ const CounterItem = ({ value, label }: { value: number; label: string }) => {
             borderRadius={'50%'}
             width="10px"
             height="10px"
-            bottom={56}
+            bottom={{ xs: 31, sm: 56 }}
             left={-5}
             position={'absolute'}
           />
@@ -36,7 +36,7 @@ const CounterItem = ({ value, label }: { value: number; label: string }) => {
             borderRadius={'50%'}
             width="10px"
             height="10px"
-            bottom={56}
+            bottom={{ xs: 31, sm: 56 }}
             right={-5}
             position={'absolute'}
           />
